@@ -1,6 +1,6 @@
 :root {
     --fondo: #4841C1;
-    --ttile_H1: white;
+    --title: #fff;
 }
 
 
@@ -34,6 +34,15 @@ p {
 /* ------------------------ CSS para dispositivos DESKTOP ------------------------ */
 @media (min-width:1024px) {
 
+     /* ------------------------ Tipografia y  ------------------------ */
+    .title {
+        font-size: 2.7em;
+    }
+
+    .text {
+        color: var(--title);
+    }
+
     /* ------------------------ Contenedor Princioal ------------------------ */
     .container-body {
         width: 100%;
@@ -51,19 +60,21 @@ p {
 
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
 
         flex-direction: column;
         flex-wrap: nowrap;
-        gap: 4%;
+        row-gap: 4%;
+
+        margin-top: 10%;
     }
 
-    .title-header {
-        color: var(--ttile_H1);
-    }
+    /* .container-title-h {
+        color: var(--title);
+    } */
 
-    .list-header > ul > li{
-        color: var(--ttile_H1);
+    .container-list-h > ul > li{
+        color: var(--title);
         list-style: none;
     }
 
