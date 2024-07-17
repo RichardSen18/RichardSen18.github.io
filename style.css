@@ -33,43 +33,69 @@ p {
 /* ------------------------ CSS para dispositivos DESKTOP ------------------------ */
 @media (min-width:1024px) {
 
-     /* ------------------------ Tipografia y  ------------------------ */
-    .title {
+     /* ------------------------ Tipografia ------------------------ */
+    /* .title {
         font-size: 2.7em;
-    }
+    } */
 
     /* .text {
         color: var(--title);
     } */
 
-    /* ------------------------ Contenedor Princioal ------------------------ */
+    /* ------------------------ Contenedor Seccionar ------------------------ */
     .container-body {
         width: 100%;
         height: 100%;
 
         display: grid;
-        grid-template-columns: 1fr 1.4fr;
-        grid-template-rows: 4fr 1fr;
+        grid-template-columns: 0.2fr 1fr 0.2fr;
+        grid-template-rows: 1fr;
+    }
+
+    /* ------------------------ Contenedor Principal ------------------------ */
+    .container {
+        grid-area: 1/2/1/3;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
     }
 
     /* ------------------------ Contenedor del header ------------------------ */
     .container-header {
-        
-        grid-area: 1/1/2/2;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
 
-        
-
-        margin-top: 10%;
-    }
-
-    .container-fixed {
+        padding: 96px 0;
         position: fixed;
-        
     }
 
-    /* .container-title-h {
-        width: 100% ;
-    } */
+    /* ------------------------ Contenedor del Main ------------------------ */
+    .container-main {
+        display: flex;
+        width: 50%;
+
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        padding: 96px 0;
+
+    }
+    /* ------------------------ Contenedor del Fotter  ------------------------ */
+    .container-footer {
+        background-color: aqua;
+        display: flex;
+    }
+
+
+
+
+
+    .container-title-h {
+        width: 100%;
+    }
 
     .container-list-h > ul > li{
         color: var(--title);
@@ -80,23 +106,7 @@ p {
         padding: 0;
     }
 
-
-    /* ------------------------ Contenedor del Main ------------------------ */
-    .container-main {
-        grid-area: 1/2/3/3;
-
-        display: flex;
-        flex-direction: column;
-
-        margin-top: 10%;
-
-    }
-
-
-    /* ------------------------ Contenedor del Fotter  ------------------------ */
-    .container-footer {
-        grid-area: 2/1/3/2;
-
-        display: flex;
+    .prueba {
+        overflow: hidden;
     }
 }
