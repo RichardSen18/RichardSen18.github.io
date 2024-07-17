@@ -60,11 +60,13 @@ p {
         flex-direction: row;
         flex-wrap: nowrap;
 
+        position: relative;
+        box-sizing: border-box;
     }
 
     /* ------------------------ Contenedor del header ------------------------ */
     .container-header {
-        width: 50%;
+        width: 350px;
         display: flex;
         flex-direction: column;
 
@@ -81,7 +83,8 @@ p {
         flex-wrap: nowrap;
 
         padding: 96px 0;
-
+        position: absolute;
+        right: 0;
     }
     /* ------------------------ Contenedor del Fotter  ------------------------ */
     .container-footer {
