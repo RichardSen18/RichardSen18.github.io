@@ -3,7 +3,6 @@
     --title: #fff;
 }
 
-
 * {
     box-sizing: border-box;
 
@@ -15,6 +14,7 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 h1,
@@ -33,14 +33,14 @@ p {
 /* ------------------------ CSS para dispositivos DESKTOP ------------------------ */
 @media (min-width:1024px) {
 
-     /* ------------------------ Tipografia ------------------------ */
-    /* .title {
+    /* ------------------------ Tipografia ------------------------ */
+    .title {
         font-size: 2.7em;
-    } */
+    }
 
-    /* .text {
+    .text {
         color: var(--title);
-    } */
+    }
 
     /* ------------------------ Contenedor Seccionar ------------------------ */
     .container-body {
@@ -70,6 +70,7 @@ p {
         display: flex;
         flex-direction: column;
 
+        row-gap: 50px;
         padding: 96px 0;
         position: fixed;
     }
@@ -86,6 +87,7 @@ p {
         position: absolute;
         right: 0;
     }
+
     /* ------------------------ Contenedor del Fotter  ------------------------ */
     .container-footer {
         background-color: aqua;
@@ -96,16 +98,16 @@ p {
 
 
 
-    .container-title-h {
+    .container-title {
         width: 100%;
     }
 
-    .container-list-h > ul > li{
+    .container-list-h>ul>li {
         color: var(--title);
         list-style: none;
     }
 
-    .container-list-h > ul{
+    .container-list-h>ul {
         padding: 0;
     }
 
