@@ -23,7 +23,6 @@ body {
 
 /* ------------------------ CSS para dispositivos DESKTOP ------------------------ */
 @media (min-width:1024px) {
-
     /* ------- Tipografia ------- */
     .title_1 {
         font-size: 2.7em;
@@ -171,6 +170,10 @@ body {
         row-gap: 16px;
     }
 
+    .titulo-aboutme {
+        display: none;
+    }
+
     /* -------------- Seccion Experiencia -------------- */
     .section-experience {
         display: flex;
@@ -215,7 +218,7 @@ body {
 
         row-gap: 20px;
     }
-    
+
     /* ------- Contenedor Trabajos ------- */
     .project {
         display: flex;
@@ -242,5 +245,465 @@ body {
         display: flex;
         flex-direction: column;
         margin: 15px 15px 15px 0;
+    }
+}
+
+/* ------------------------ Estilos para tableta en posicion vertical ------------------------ */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* ------- Tipografia ------- */
+    .title_1 {
+        font-size: 2.7em;
+        color: var(--text);
+        text-wrap: balance;
+        margin: 0;
+    }
+
+    .title_2 {
+        font-size: 1.25em;
+        color: var(--text);
+        text-wrap: balance;
+        margin: 0;
+    }
+
+    .text {
+        font-size: 0.9em;
+        color: var(--text);
+        text-wrap: pretty;
+        margin: 0;
+    }
+
+    .date {
+        font-size: 0.8em;
+        color: var(--date);
+        margin: 0;
+    }
+
+    .title-job {
+        font-size: 1em;
+        color: var(--titleJobs);
+        margin: 0;
+    }
+
+    .text-job {
+        font-size: 0.7em;
+        color: var(--text);
+        margin: 0;
+    }
+
+    /* ------------------------ Contenedor Seccionar ------------------------ */
+    .container-body {
+        background-color: var(--fondo);
+        width: 100%;
+        height: 100%;
+
+        display: grid;
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+        grid-template-rows: 1fr;
+    }
+
+    /* ------------------------ Contenedor Principal ------------------------ */
+    .container-principal {
+        grid-area: 1/2/1/3;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        box-sizing: border-box;
+    }
+
+    /* ------------------------ Contenedor del header ------------------------ */
+    .container-header {
+        /* width: 350px; */
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        row-gap: 20px;
+        padding-top: 10%;
+    }
+
+    /* ------- Contenedor del titulo ------- */
+    .container-title {
+        display: flex;
+        flex-direction: column;
+
+        row-gap: 10px;
+    }
+
+    #list-menu {
+        display: none;
+    }
+
+    /* ------- Indice ------- */
+    /* .list-group > a{
+        background-color: var(--fondo);
+    } */
+
+    .list-group-item.active {
+        background-color: var(--fondo);
+    }
+
+    /* ------- Contenedor Redes ------- */
+    .container-redes {
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+    }
+
+    .container-redes a {
+        width: 40px;
+        height: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 2px;
+        margin: 5px;
+        border: 2px solid var(--icons);
+        border-radius: 50%;
+        transition: all 0.2s ease-in;
+    }
+
+    .container-redes i {
+        color: var(--icons);
+        font-size: 1.5rem;
+        transition: all 0.2s ease-in;
+    }
+
+    .container-redes a:hover {
+        background-color: var(--icons);
+    }
+
+    .container-redes a:hover i {
+        color: var(--fondo);
+    }
+
+
+    /* ------------------------ Contenedor del Main ------------------------ */
+    .container-main {
+        /* width: 50%; */
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 100px;
+
+        padding: 10% 0;
+    }
+
+    /* -------------- Seccion Sobre mi -------------- */
+    .section-aboutme {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .titulo-aboutme {
+        padding-bottom: 10px;
+    }
+
+    /* -------------- Seccion Experiencia -------------- */
+    .section-experience {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        row-gap: 20px;
+    }
+
+    /* ------- Contenedor Trabajos ------- */
+    .jobs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 1px solid transparent
+    }
+
+    .jobs:hover {
+        background-color: var(--fondo2);
+        border-radius: 6px;
+        border: solid 1px;
+        border-color: #fff;
+    }
+
+    .jobs-date {
+        width: 20%;
+        margin: 15px 0 0 15px;
+    }
+
+    .jobs-content {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin: 15px 15px 15px 0;
+    }
+
+    /* -------------- Seccion Proyectos -------------- */
+    .section-projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        row-gap: 20px;
+    }
+
+    /* ------- Contenedor Trabajos ------- */
+    .project {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 1px solid transparent;
+    }
+
+    .container-project-img {
+        width: 20%;
+        margin: 15px 0 0 15px;
+
+    }
+
+    .project-img {
+        width: 100%;
+        height: 43%;
+
+        border-radius: 6px;
+    }
+
+    .project-content {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin: 15px 15px 15px 0;
+    }
+}
+
+@media (max-width:768px) {
+     /* ------- Tipografia ------- */
+     .title_1 {
+        font-size: 2.7em;
+        color: var(--text);
+        text-wrap: balance;
+        margin: 0;
+    }
+
+    .title_2 {
+        font-size: 1.25em;
+        color: var(--text);
+        text-wrap: balance;
+        margin: 0;
+    }
+
+    .text {
+        font-size: 0.9em;
+        color: var(--text);
+        text-wrap: pretty;
+        margin: 0;
+    }
+
+    .date {
+        font-size: 0.8em;
+        color: var(--date);
+        margin: 0;
+    }
+
+    .title-job {
+        font-size: 1em;
+        color: var(--titleJobs);
+        margin: 0;
+    }
+
+    .text-job {
+        font-size: 0.7em;
+        color: var(--text);
+        margin: 0;
+    }
+
+    /* ------------------------ Contenedor Seccionar ------------------------ */
+    .container-body {
+        background-color: var(--fondo);
+        width: 100%;
+        height: 100%;
+
+        display: grid;
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+        grid-template-rows: 1fr;
+    }
+
+    /* ------------------------ Contenedor Principal ------------------------ */
+    .container-principal {
+        grid-area: 1/2/1/3;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        box-sizing: border-box;
+    }
+
+    /* ------------------------ Contenedor del header ------------------------ */
+    .container-header {
+        /* width: 350px; */
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        row-gap: 20px;
+        padding-top: 10%;
+    }
+
+    /* ------- Contenedor del titulo ------- */
+    .container-title {
+        display: flex;
+        flex-direction: column;
+
+        row-gap: 10px;
+    }
+
+    #list-menu {
+        display: none;
+    }
+
+    /* ------- Indice ------- */
+    /* .list-group > a{
+        background-color: var(--fondo);
+    } */
+
+    .list-group-item.active {
+        background-color: var(--fondo);
+    }
+
+    /* ------- Contenedor Redes ------- */
+    .container-redes {
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+    }
+
+    .container-redes a {
+        width: 40px;
+        height: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 2px;
+        margin: 5px;
+        border: 2px solid var(--icons);
+        border-radius: 50%;
+        transition: all 0.2s ease-in;
+    }
+
+    .container-redes i {
+        color: var(--icons);
+        font-size: 1.5rem;
+        transition: all 0.2s ease-in;
+    }
+
+    .container-redes a:hover {
+        background-color: var(--icons);
+    }
+
+    .container-redes a:hover i {
+        color: var(--fondo);
+    }
+
+
+    /* ------------------------ Contenedor del Main ------------------------ */
+    .container-main {
+        /* width: 50%; */
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 100px;
+
+        padding: 10% 0;
+    }
+
+    /* -------------- Seccion Sobre mi -------------- */
+    .section-aboutme {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .titulo-aboutme {
+        padding-bottom: 10px;
+        position: sticky;
+    }
+
+    /* -------------- Seccion Experiencia -------------- */
+    .section-experience {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        row-gap: 20px;
+    }
+
+    /* ------- Contenedor Trabajos ------- */
+    .jobs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid transparent
+    }
+
+    .jobs:hover {
+        background-color: var(--fondo2);
+        border-radius: 6px;
+        border: solid 1px;
+        border-color: #fff;
+    }
+
+    .jobs-date {
+        width: 20%;
+    }
+
+    .jobs-content {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* -------------- Seccion Proyectos -------------- */
+    .section-projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        row-gap: 20px;
+    }
+
+    /* ------- Contenedor Trabajos ------- */
+    .project {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        
+        row-gap: 15px;
+    }
+
+    .container-project-img {
+        width: 200px;
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .project-img {
+        width: 100%;
+        height: 100%;
+
+        border-radius: 6px;
+    }
+
+    .project-content {
+        display: flex;
+        flex-direction: column;
     }
 }
