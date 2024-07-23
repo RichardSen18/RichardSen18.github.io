@@ -23,6 +23,7 @@ body {
 
 /* ------------------------ CSS para dispositivos DESKTOP ------------------------ */
 @media (min-width:1024px) {
+
     /* ------- Tipografia ------- */
     .title_1 {
         font-size: 2.7em;
@@ -208,6 +209,27 @@ body {
         display: flex;
         flex-direction: column;
         margin: 15px 15px 15px 0;
+        row-gap: 10px;
+    }
+
+    .job-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 10px 20px;
+
+        margin: 0;
+    }
+
+    .text-list {
+        font-size: 0.7em;
+        color: var(--titleJobs);
+        margin: 0;
+        background-color: rgba(93, 255, 255, 0.201);
+
+        display: flex;
+        justify-content: center;
+        border-radius: 6px;
     }
 
     /* -------------- Seccion Proyectos -------------- */
@@ -245,6 +267,37 @@ body {
         display: flex;
         flex-direction: column;
         margin: 15px 15px 15px 0;
+        row-gap: 10px;
+    }
+
+    /* -------------- Seccion Porcentajes -------------- */
+    .section-percentage {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .progres {
+        height: 35px;
+        width: 100%;
+        border: 1px solid;
+        border-radius: 5px;
+        background-color: rgba(93, 255, 255, 0.201);
+        margin-bottom: 15px;
+    }
+
+    .progres-bar {
+        height: 100%;
+        border: 2px solid var(--titleJobs);
+        display: flex;
+        align-items: center;
+        transition: width 0.25s;
+        border-radius: 5px;
+    }
+
+    .progress-bar-text {
+        margin-left: 10px;
+        font-weight: bold;
+        color: #cce7f5;
     }
 }
 
@@ -440,6 +493,27 @@ body {
         display: flex;
         flex-direction: column;
         margin: 15px 15px 15px 0;
+        row-gap: 10px;
+    }
+
+    .job-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 10px 20px;
+
+        margin: 0;
+    }
+
+    .text-list {
+        font-size: 0.7em;
+        color: var(--titleJobs);
+        margin: 0;
+        background-color: rgba(93, 255, 255, 0.201);
+
+        display: flex;
+        justify-content: center;
+        border-radius: 6px;
     }
 
     /* -------------- Seccion Proyectos -------------- */
@@ -477,12 +551,44 @@ body {
         display: flex;
         flex-direction: column;
         margin: 15px 15px 15px 0;
+        row-gap: 10px;
+    }
+
+    /* -------------- Seccion Porcentajes -------------- */
+    .section-percentage {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .progres {
+        height: 35px;
+        width: 100%;
+        border: 1px solid;
+        border-radius: 5px;
+        background-color: rgba(93, 255, 255, 0.201);
+        margin-bottom: 15px;
+    }
+
+    .progres-bar {
+        height: 100%;
+        border: 2px solid var(--titleJobs);
+        display: flex;
+        align-items: center;
+        transition: width 0.25s;
+        border-radius: 5px;
+    }
+
+    .progress-bar-text {
+        margin-left: 10px;
+        font-weight: bold;
+        color: #cce7f5;
     }
 }
 
 @media (max-width:768px) {
-     /* ------- Tipografia ------- */
-     .title_1 {
+
+    /* ------- Tipografia ------- */
+    .title_1 {
         font-size: 2.7em;
         color: var(--text);
         text-wrap: balance;
@@ -669,6 +775,27 @@ body {
 
         display: flex;
         flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .job-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 10px 20px;
+
+        margin: 0;
+    }
+
+    .text-list {
+        font-size: 0.7em;
+        color: var(--titleJobs);
+        margin: 0;
+        background-color: rgba(93, 255, 255, 0.201);
+
+        display: flex;
+        justify-content: center;
+        border-radius: 6px;
     }
 
     /* -------------- Seccion Proyectos -------------- */
@@ -685,7 +812,7 @@ body {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
-        
+
         row-gap: 15px;
     }
 
@@ -705,5 +832,36 @@ body {
     .project-content {
         display: flex;
         flex-direction: column;
+        row-gap: 10px;
+    }
+
+    /* -------------- Seccion Porcentajes -------------- */
+    .section-percentage {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .progres {
+        height: 35px;
+        width: 100%;
+        border: 1px solid;
+        border-radius: 5px;
+        background-color: rgba(93, 255, 255, 0.201);
+        margin-bottom: 15px;
+    }
+
+    .progres-bar {
+        height: 100%;
+        border: 2px solid var(--titleJobs);
+        display: flex;
+        align-items: center;
+        transition: width 0.25s;
+        border-radius: 5px;
+    }
+
+    .progress-bar-text {
+        margin-left: 10px;
+        font-weight: bold;
+        color: #cce7f5;
     }
 }
